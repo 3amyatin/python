@@ -8,7 +8,7 @@ class Hid(str):
   pass
 
 
-class ZIELEZIN:
+class General:
   level: int = 0
   gesamtdauer: timedelta = timedelta()
 
@@ -81,4 +81,4 @@ class ZIELEZIN:
   def __del__(self):
     self.beenden()
 
-# /class ZIELEZIN:
+# /class General:
