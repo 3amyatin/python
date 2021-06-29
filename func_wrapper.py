@@ -1,7 +1,7 @@
 import functools
 
 
-def zielezin_wrapper(func):
+def func_wrapper(func):
   @functools.wraps(func)  # behält func.__name__ und func.__doc__ ursprunglicher Funktion
   def wrapper(self, *args, **kwargs):
     # print Funktionsaufruf
@@ -22,4 +22,4 @@ def zielezin_wrapper(func):
     return value
   # /def wrapper(self, *args, **kwargs)
   return wrapper
-# /def zielezin_wrapper(func)
+# /def func_wrapper
